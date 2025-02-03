@@ -1,8 +1,3 @@
-workspace "glfw"
-    configurations { "debug", "release" }
-    platforms { "x11" }
-    staticruntime "Off"
-
 project "glfw"
     kind "StaticLib"
     language "C"
@@ -30,8 +25,7 @@ project "glfw"
         "src/window.c",
     }
 
-    filter "platforms:x11"
-        system "linux"
+    filter "system:linux"
         systemversion "latest"
         pic "On"
 
