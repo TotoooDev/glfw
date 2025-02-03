@@ -102,3 +102,9 @@ tests/triangle-vulkan
 tests/window
 tests/windows
 
+# binary directories
+obj/
+bin/
+
+# files generated bu premake
+glfw.make
